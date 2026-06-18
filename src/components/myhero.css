@@ -1,0 +1,133 @@
+/* =========================
+   WRAPPER
+========================= */
+.solutions-wrapper {
+    position: relative;
+    padding: 80px 40px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* =========================
+   BLUE SHAPE
+========================= */
+.decoration-shape {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+    height: 320px;
+    background: #5d78ff;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+/* =========================
+   FLEX LAYOUT
+========================= */
+.solutions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* equal width */
+.solutions-text,
+.solutions-media {
+    flex: 1;
+}
+
+/* =========================
+   TEXT
+========================= */
+.solutions-text h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.solutions-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 500px;
+}
+
+/* =========================
+   CAROUSEL AREA
+========================= */
+.solutions-media {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-box {
+    width: 100%;
+    max-width: 520px;
+}
+
+/* image */
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* remove weird bg */
+.carousel .slide {
+    background: transparent !important;
+}
+
+/* =========================
+   🔥 DOT FIX (BOTTOM ONLY)
+========================= */
+
+/* force vertical stack */
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+
+/* slider first */
+.carousel .slider-wrapper {
+    order: 1;
+}
+
+/* dots always below */
+.carousel .control-dots {
+    order: 2;
+    position: static !important;
+    margin-top: 15px !important;
+    padding: 0 !important;
+}
+
+/* dot style */
+.carousel .dot {
+    background: #ccc !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+}
+
+.carousel .dot.selected {
+    background: #000 !important;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 968px) {
+    .solutions-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .solutions-text p {
+        margin: 0 auto;
+    }
+
+    .decoration-shape {
+        display: none;
+    }
+}

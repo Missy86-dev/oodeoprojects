@@ -1,0 +1,105 @@
+.logo img{
+    width: 180px;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(237,240,247);
+    padding: 2px 5px;
+      font-family: "Rubik", sans-serif;
+font-weight: 800;
+    color: #1D2DB5; /* deep blue */
+    font-size: 18px;
+    font-weight: 900; /* thick text */
+    letter-spacing: 1px;
+    height: 50px;
+    position: fixed;
+    
+    width: 100%;
+    left: 0;
+    right: 0;
+    
+    top: 0;
+    z-index: 200;
+}
+
+.navLinks{
+   display: flex;
+   gap: 2rem;
+   
+}
+.ink{
+  text-decoration: none;
+color: #1D2DB5;
+font-weight: 800;
+
+}
+.ink h4{
+ 
+  font-weight: 800;
+}
+li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.contactUs_btn button{
+  border: 0;
+  outline: 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #1D2DB5;
+  color: white;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+/* NAV MENU */
+.navLinks {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* IMPORTANT: parent must be relative */
+.services {
+  position: relative;
+  cursor: pointer;
+}
+
+/* HIDE dropdown by default */
+.dropdown {
+  display: none;          /* 🔥 THIS HIDES IT */
+  position: absolute;
+  top: 80%;
+  left: 0;
+
+  background: white;
+  list-style: none;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 20px;
+
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* SHOW dropdown on hover */
+.services:hover .dropdown {
+  display: block;         /* 🔥 THIS SHOWS IT */
+}
+
+/* dropdown items styling */
+.dropdown li {
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.dropdown li:hover {
+  background-color: #f2f2f2;
+}

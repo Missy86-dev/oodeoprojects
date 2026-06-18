@@ -1,0 +1,20 @@
+.productWrapper{
+  /* background-color: blue; */
+  color: black;        
+  /* padding-top: 5px;        */
+  min-height: auto;  
+  margin-top: 5rem; 
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768) {
+  .productWrapper{
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productWrapper{
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,194 @@
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(237, 240, 247);
+    padding: 0 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: #1D2DB5;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+
+/* NAV */
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+  
+}
+
+/* LINKS */
+.ink {
+    text-decoration: none;
+    color: #1D2DB5;
+    font-weight: 800;
+}
+
+li {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* BUTTON */
+.contactUs_btn button {
+    border: none;
+    padding: 12px 18px;
+    margin-right: 40px;
+    border-radius: 8px;
+    background-color: #1D2DB5;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* DROPDOWN FIX (IMPORTANT)  */
+/* ========================= */
+
+.services {
+    position: relative;
+    cursor: pointer;
+}
+
+/* hidden by default */
+.dropdown {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    /* FIX: no gap */
+    left: 0;
+
+    background: white;
+    padding: 10px 0;
+    margin: 0;
+
+    min-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    z-index: 999;
+}
+
+/* keep open when hovering parent OR dropdown */
+.services:hover .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+/* items */
+.dropdown li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dropdown li:hover {
+    background: #f2f2f2;
+}
+
+@media(max-width:768px){ 
+    .logo img {
+    width: 100px;
+    height: auto;
+}
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(237, 240, 247);
+    padding: 0 5px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: #1D2DB5;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+   .navLinks {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    display: none;
+  
+}
+
+}
+
+@media(max-width:480px){ 
+    .logo img {
+    width: 100px;
+    height: auto;
+}
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(237, 240, 247);
+    padding: 0 5px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: #1D2DB5;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+   .navLinks {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    display: none;
+  
+}
+
+}
+
+@media(max-width:380px){ 
+    .logo img {
+    width: 100px;
+    height: auto;
+}
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(237, 240, 247);
+    padding: 0 5px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: #1D2DB5;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+   .navLinks {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    display: none;
+}
+}
+

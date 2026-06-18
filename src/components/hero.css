@@ -1,0 +1,168 @@
+.solutions-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  top: 5rem;
+  min-height: 550px;
+  z-index: 99;
+}
+
+/* Left decorative blue shape */
+.decoration-shape {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 140px;
+  height: 320px;
+  background: #5d78ff; /* Matches the blue in your image */
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  opacity: 0.8;
+}
+
+.solutions-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+  z-index: 1;
+}
+
+.solutions-text-side {
+  flex: 1;
+  text-align: center;
+}
+
+.solutions-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 25px;
+  font-family: 'Inter', sans-serif; /* Recommended for this look */
+}
+
+.solutions-body {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #444444;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.solutions-visual-side {
+  flex: 1.3;
+  display: flex;
+  justify-content: center;
+}
+
+.illustration-img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+.carousel .slide {
+  background: none;
+}
+
+.pagination-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 12px;
+
+}
+
+.pag-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+}
+
+/* new styles */
+
+/* =========================
+   1. REMOVE SIDE LINES
+
+
+   
+========================= */
+
+
+.carousel .slider-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  background: none !important;
+}
+
+.carousel .slider {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* remove weird gaps */
+.carousel {
+  background: transparent !important;
+}
+
+/* =========================
+   2. IMAGE STYLE
+========================= */
+.carousel .slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   3. FIX DOT POSITION (IMPORTANT)
+========================= */
+.my-carousel .control-dots {
+  position: relative !important;   /* kills absolute overlay */
+  bottom: auto !important;
+  margin-top: 15px !important;     /* pushes below image */
+}
+
+/* dot style */
+.my-carousel .control-dots .dot {
+  background: #ccc;
+  opacity: 1;
+  box-shadow: none;
+}
+
+.my-carousel .control-dots .dot.selected {
+  background: #000;
+}
+
+/* =========================
+   4. ARROWS CLEANUP
+========================= */
+.carousel .control-arrow {
+  background: rgba(0,0,0,0.4) !important;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 968px) {
+  .solutions-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .decoration-shape {
+    display: none;
+  }
+  
+  .solutions-heading {
+    font-size: 1.8rem;
+  }
+}

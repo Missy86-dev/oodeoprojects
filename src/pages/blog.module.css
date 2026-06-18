@@ -1,0 +1,278 @@
+.blogMedia {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  
+}
+
+.carouselBox   {
+  max-width:  100%;
+  margin-top: 3rem;
+
+}
+
+.slide { 
+  text-align: center;
+}
+
+.cardOne {
+  border: 4px solid #2d2db3;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff;
+}
+
+/* .cardOne img {
+  width: 100%;
+  border-radius: 10px;
+} */
+
+/* Title */
+.slide h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Make links behave like blocks */
+.slide a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #2d2db3;
+}
+.cardOne {
+  border: 4px solid #2d2db3;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff;
+  height: 250px;          /* ADD THIS */
+  overflow: hidden;       /* ADD THIS */
+  display: flex;          /* ADD THIS */
+  align-items: center;    /* ADD THIS */
+  justify-content: center; /* ADD THIS */
+}
+
+.cardOne img {
+  width: 100%;
+  height: 100%;           /* ADD THIS */
+  object-fit: cover;      /* ADD THIS */
+  border-radius: 10px;
+}
+.keen-slider{
+  background-color: red;
+}
+/* .section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width:100%;
+  width: 100%;
+}
+
+.mainHeader {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 80px;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.textContent {
+  text-align: center;
+  max-width: 700px; 
+}
+
+.blogTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.description {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.viewLink {
+  color: #001ba0; 
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.viewLink:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.container {
+  background-color: #f0f4ff; 
+  padding: 60px 20px;
+  font-family: 'Inter', -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.cardWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 1.4 / 1;
+  border: 4px solid #1a237e; 
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover .image {
+  transform: scale(1.05);
+}
+
+.title {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+} */
+
+/* Pagination Styling */
+/* .pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.activeDot {
+  background-color: transparent;
+  border: 2px solid #3f51b5;
+  width: 10px;
+  height: 10px;
+}
+.cardOne{
+  background-color: red;
+}
+.cardImg img{
+  width: 300px;
+} */
+
+/* ===========================
+    CAROUSEL AREA
+=========================== */
+/* 
+.blog-media{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.carousel-box{
+  width: 90%;
+  margin: auto;
+}
+
+.slide {
+  padding: 10px;
+}
+
+.cardOne img {
+  width: 100%;
+  display: block;
+}
+
+.cardOne {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
+/* Mobile Responsive Adjustments */
+/* @media (max-width: 768px) {
+  .mainHeader {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .blogTitle {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+} */
