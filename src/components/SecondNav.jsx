@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./secondnav.css";
 import companylogo from "../assets/Oodeologo.png";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const SecondNav = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <header>
@@ -11,7 +13,7 @@ const SecondNav = () => {
           <img src={companylogo} alt="Company Logo" />
         </div>
 
-        <nav>
+        <nav className={menuOpen ? "active" : ""}>
           <ul className="navLinks">
             <li>
               <Link to="/" className="ink">
@@ -79,6 +81,12 @@ const SecondNav = () => {
         <Link to="/contact" className="contactUs_btn">
           <button>Contact Us</button>
         </Link>
+        <div
+  className="hamburger"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</div>
       </header>
     </>
   );
