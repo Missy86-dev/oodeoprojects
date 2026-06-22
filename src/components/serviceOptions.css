@@ -64,7 +64,6 @@
 .service-container{
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
 }
 
 .service-buttons button {
