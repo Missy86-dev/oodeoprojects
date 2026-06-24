@@ -60,22 +60,42 @@
   
 }
 
-@media(max-width:768px){
-.service-container{
-  display: flex;
-  flex-direction: column;
+/* Tablet and below */
+@media screen and (max-width: 768px) {
+  .service-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .service-buttons button {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
 }
 
-.service-buttons button {
-  width: 100%;
-  padding: 18px;
-  /* background-color: #2c27a6; */
-  background-color: #1d2db5; 
-  border: none;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
+/* Small mobile */
+@media screen and (max-width: 480px) {
+  .service-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+  }
+
+  .service-buttons button {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .service-buttons button a {
+    display: block;
+    width: 100%;
+  }
 }

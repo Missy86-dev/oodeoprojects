@@ -67,3 +67,10 @@
   padding-top: 20px;
   font-size: 14px;
 }
+
+@media (max-width: 768px){
+.footer {
+  margin-bottom: 0;
+}
+
+}
