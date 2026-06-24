@@ -55,7 +55,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom">
-        © 2021 Fürst Solutions GmbH | All rights reserved
+        © 2026 Oodeo Projects Limited | All rights reserved
       </div>
     </footer>
 
