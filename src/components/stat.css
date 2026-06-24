@@ -48,7 +48,7 @@
    ========================= */
 @media screen and (max-width: 768px) {
   .stats {
-    padding: 25px 20px 0;
+    padding: 25px 20px 10px;
     margin-bottom: 0;
   }
 
@@ -90,7 +90,7 @@
    ========================= */
 @media screen and (max-width: 480px) {
   .stats {
-    padding: 20px 15px 0;
+    padding: 20px 15px 10px;
     margin-bottom: 0;
   }
 
