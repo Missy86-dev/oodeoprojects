@@ -9,9 +9,16 @@ const SecondNav = () => {
   return (
     <>
       <header>
-        <div className="logo">
+
+       <div className="logo">
+        <Link to="/">
+          <img src={companylogo} alt="Oodeo logo" />
+        </Link>
+      </div>
+
+        {/* <div className="logo">
           <img src={companylogo} alt="Company Logo" />
-        </div>
+        </div> */}
 
         <nav className={menuOpen ? "active" : ""}>
           <ul className="navLinks">

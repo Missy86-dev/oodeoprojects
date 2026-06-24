@@ -141,7 +141,7 @@ li {
 
 @media(max-width:768px){
 
-    .logo img{
+    .logo-link img{
         width:100px;
         height:auto;
     }
@@ -204,7 +204,7 @@ li {
 
 
 @media(max-width:480px){ 
-    .logo img {
+    .logo-link img {
     width: 150px;
     height: auto;
 }
