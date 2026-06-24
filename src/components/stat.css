@@ -1,6 +1,6 @@
 .stats {
   background-color: #cfd2d9;
-  padding: 30px 20px 0;   /* bottom 0 removes gap before footer */
+  padding: 30px 20px 20px;   /* bottom 0 removes gap before footer */
   text-align: center;
   margin-bottom: 0;       /* closes space above footer */
 }
